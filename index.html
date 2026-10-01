@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sylla Moctar – Portfolio</title>
+<meta name="description" content="Portfolio de Sylla Moctar, étudiant en BTS Informatique et Développement d'Application.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#accueil">Aller au contenu</a>
+
+<header class="top" id="top">
+  <a class="logo" href="#accueil">Sylla Moctar</a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav">
+    <a href="#a-propos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#recommandations">Recommandations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="theme" aria-label="Changer de thème">◐</button>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main>
+  <section id="accueil" class="hero">
+    <div class="hero-text">
+      <p class="hello">Bonjour, je suis</p>
+      <h1>Sylla Moctar</h1>
+      <p class="role">Étudiant en Informatique et developpement web, je suis <span id="typed"></span><span class="caret">|</span></p>
+      <p class="lead">Je transforme des idées en solutions concrètes : sites web, bases de données et interfaces modernes.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Me contacter</a>
+        <a class="btn ghost" href="#parcours">Voir mon parcours</a>
+      </div>
+    </div>
+    <img class="photo" src="sylla.jpeg" alt="Portrait de Sylla Moctar" width="360" height="440">
+  </section>
+
+  <section id="a-propos">
+    <h2>À propos de moi</h2>
+    <p class="intro">Passionné du numérique, j'aime comprendre comment les choses fonctionnent, expérimenter de nouvelles approches et relever des défis qui me font progresser. Je m'intéresse au développement web, à la programmation, aux bases de données et à la conception d'interfaces modernes.</p>
+    <div class="tabs" role="tablist" aria-label="Mon profil">
+      <button role="tab" aria-selected="true" aria-controls="p1" id="t1">Objectifs</button>
+      <button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1">Qualités</button>
+      <button role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1">Motivations</button>
+    </div>
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+      <p>Ce qui m'attire dans l'informatique, c'est la possibilité de partir d'un simple problème ou d'une idée et de construire une solution fonctionnelle, intuitive et utile.</p>
+    </div>
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+      <p>Curieux, sérieux, persévérant et déterminé. Face à une difficulté, je cherche à comprendre et à trouver une solution plutôt qu'abandonner. J'accorde de l'importance à la discipline, à l'organisation et au travail en équipe.</p>
+    </div>
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+      <p>Créer, apprendre et progresser. Imaginer une solution, écrire le code, corriger les erreurs, améliorer l'interface et obtenir un résultat concret : c'est ce qui me passionne. Je suis encore en apprentissage, mais je progresse étape par étape.</p>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences et niveaux</h2>
+    <div class="skills">
+      <div class="skill" data-level="70"><div class="skill-head"><span>HTML / CSS</span><b>70 %</b></div><div class="bar"><i></i></div></div>
+      <div class="skill" data-level="10"><div class="skill-head"><span>JavaScript</span><b>10 %</b></div><div class="bar"><i></i></div></div>
+      <div class="skill" data-level="50"><div class="skill-head"><span>VS Code, Dev C++, GitHub</span><b>50 %</b></div><div class="bar"><i></i></div></div>
+      <div class="skill" data-level="50"><div class="skill-head"><span>WinDev, CapCut, Canva</span><b>50 %</b></div><div class="bar"><i></i></div></div>
+    </div>
+  </section>
+
+  <section id="parcours">
+    <h2>Parcours</h2>
+    <div class="filters" role="group" aria-label="Filtrer le parcours">
+      <button class="chip on" data-f="all" aria-pressed="true">Tout</button>
+      <button class="chip" data-f="scolaire" aria-pressed="false">Parcours scolaire</button>
+      <button class="chip" data-f="formation" aria-pressed="false">Formations</button>
+    </div>
+    <ol class="timeline">
+      <li data-type="scolaire"><time>2025 – 2026</time><h3>BTS Informatique et Développement d'Application</h3><p>Académie Élite.</p></li>
+      <li data-type="scolaire"><time>2024 – 2025</time><h3>Année prépa IDA</h3><p>Une année de classe prépa en informatique et développement d'application.</p></li>
+      <li data-type="formation"><time>2024</time><h3>Séminaire régional de formation islamique du Kabadougou</h3><p>Séminaire de formation.</p></li>
+      <li data-type="scolaire"><time>2023 – 2024</time><h3>Baccalauréat série D</h3><p>Baccalauréat scientifique obtenu au Collège Privé Excellence d'Odienné.</p></li>
+      <li data-type="formation"><time>2023</time><h3>En quête du BTS</h3><p>Travail sur des projets personnels.</p></li>
+      <li data-type="scolaire"><time>2022 – 2023</time><h3>Deuxième année de Terminale</h3><p>Une année d'épreuve : en plus de la pression de la Terminale, le décès de ma mère en milieu d'année m'a obligé à interrompre les cours deux semaines.</p></li>
+      <li data-type="scolaire"><time>2021 – 2022</time><h3>Première année de Terminale</h3><p>Une année d'expérience, sans obtenir le bac cette année-là.</p></li>
+      <li data-type="formation"><time>2021</time><h3>Séminaire régional de formation islamique du Tonkpi</h3><p>Cinq jours, trois niveaux de formation : islamique, managériale et académique.</p></li>
+    </ol>
+  </section>
+
+  <section id="recommandations">
+    <h2>Recommandations</h2>
+    <div class="reco-grid">
+      <blockquote><p>Sylla Moctar a fait de l'excellent travail au service.</p><footer>Djamalou Shop · <a href="merise.pdf" target="_blank" rel="noopener">Télécharger le document</a></footer></blockquote>
+      <blockquote><p>J'ai confié mon site à Sylla et j'en suis très satisfait. Il a su répondre à toutes mes attentes.</p><footer>Sidibé Fatim · <a href="backend.pdf" target="_blank" rel="noopener">Télécharger le document</a></footer></blockquote>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-wrap">
+      <div class="links">
+        <a href="mailto:syllamoctar04@gmail.com" id="mail">syllamoctar04@gmail.com</a>
+        <button class="chip" id="copy">Copier l'e-mail</button>
+        <a href="tel:+2250172543538">+225 01 72 54 35 38</a>
+        <a href="https://github.com/syllamoctar04" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <form id="form" novalidate>
+        <label>Nom<input name="nom" autocomplete="family-name" required></label>
+        <label>Prénom<input name="prenom" autocomplete="given-name" required></label>
+        <label>Votre e-mail<input name="email" type="email" autocomplete="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <p class="msg" role="status" aria-live="polite"></p>
+        <button class="btn" type="submit">Envoyer le message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <nav><a href="#accueil">Accueil</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav>
+  <p>© 2026 Sylla Moctar – Tous droits réservés</p>
+</footer>
+<button class="totop" aria-label="Retour en haut" hidden>↑</button>
+<script src="script.js"></script>
+</body>
+</html>
